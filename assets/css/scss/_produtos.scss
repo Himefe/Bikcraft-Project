@@ -1,0 +1,239 @@
+
+.interna--produtos {
+background: url(../images/bg-produtos.jpg) no-repeat center; 
+}
+
+.produto-item {
+    padding-top:60px;
+    @include d(t){
+        background-color: #000;
+        padding: 41px 0;
+    }
+}
+
+.produto-icone {
+    background-color: #000;
+    padding: 70px 0;
+    @include d(m){
+        background-color: #000;
+        padding: 41px 0;
+    }
+    
+}
+
+.produto-icone img {
+    margin: auto;
+}
+
+.produto-item h2 {
+    @include type-1(36);
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    position: relative;
+    top: -180px;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: -56px;
+    @include d(t){
+        top: -150px;
+        margin-bottom: -56px;
+    }
+    @include d(m){
+        top: -100px;
+        margin-bottom: -68px;
+    }
+}
+
+.produto-item h2::after, .produto-item h2::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 6px auto 8px auto;
+}
+
+.produto-info {
+    background-color: #000;
+}
+
+.produto-info p {
+    color: #FFF;
+    @include type-1(18);
+    padding: 30px 40px;
+    height: 180px;
+    @include d(t){
+        color: #FFF;
+        @include type-1(14);
+        line-height: normal;
+        line-height: 20px;
+        padding: 20px 30px;
+        height: 122px;
+    }
+    @include d(m){
+        color: #FFF;
+        @include type-1(14);
+        padding: 20px 30px;
+        height: auto;
+    }
+}
+
+.produto-info ul li {
+    background-color: #FEC63E;
+    text-transform: uppercase;
+    @include type-1(18);
+    font-weight: bold;
+    line-height: 20px;
+    float: left;
+    width: 229px;
+    height: 49px;
+    text-align: center;
+    padding-top: 16px;
+    @include d(t){
+        line-height: 20px;
+        float: left;
+        width: 181px;
+    }
+    @include d(m){
+        @include type-1(14);
+        width: 149px;
+        padding-top: 14px;
+    }
+}
+
+.produto-info ul li:nth-child(even) {
+    margin-left:2px ;
+}
+
+.produto-info ul li:nth-child(1), .produto-info ul li:nth-child(2) {
+    margin-bottom: 2px;
+}
+
+
+/* Orçamento */ 
+
+.orçamento {
+    background-color: black;
+    margin-top: 60px;
+    width: 100%;
+    padding: 60px 40px; 
+    
+}
+
+.orçamento h2 {
+    color: #FEC63E;
+    
+}
+
+.orçamento h2::after {
+    background-color: #FEC63E;
+}
+
+.form {
+    padding-right: 60px;
+    @include d(m){
+        padding-right: 0;
+    }
+}
+
+.form label {
+    display: flex;
+    color: #FFF;
+    @include type-2(18);
+    margin-bottom: 4px;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    border: 4px solid #FEC63E;
+    background-color: transparent;
+    color: #FFF;
+    padding: 7px 10px;
+    outline: none;
+    @include type-2(14);
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.form textarea {
+    display: block;
+    width: 100%;
+    border: 4px solid #FEC63E;
+    background-color: transparent;
+    color: #FFF;
+    padding: 7px 10px;
+    outline: none;
+    @include type-2(14);
+    line-height: normal;
+    margin-bottom: 20px;
+    height: 120px;
+}
+
+.form .btn {
+    padding: 7px 40px;
+    background-color: transparent;
+}
+
+.orçamento_dados {
+    color: #FFF;
+}
+
+.orçamento_dados h3 {
+    @include type-1(18);
+    text-transform: uppercase;
+    color: #FEC63E;
+    font-weight: bold;
+}
+
+.orçamento_dados h3:last-child {
+    margin-bottom: 40px;
+}
+
+.orçamento_dados span {
+    display: block;
+    font-weight: bold;
+    @include type-2(18);
+    line-height: 30px;
+}
+
+.orçamento_dados .span_email {
+    margin-bottom: 20px;
+}
+
+.orçamento_dados ul li {
+    @include type-2(14);
+    line-height: normal;
+    padding: 10px 15px;
+    
+}
+
+.orçamento_dados ul {
+    padding-right: 60px;
+    @include d(m){
+        padding-right: 0;
+    }
+}
+
+.orçamento_dados ul li:first-child {
+    margin-top: 10px;
+}
+
+.orçamento_dados ul li:nth-child(odd) {
+    background-color: #1d1d1d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
